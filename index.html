@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <div class="icono">
+            <img class="icono" src="./imagenes/Vector.png">
+        </div>
+        
+    </header>
+    <main>
+        <section class="todo">
+            <div class="parte1">
+                <textarea name="mensaje" id="texto-ingresado" class="mensaje2" placeholder="Ingrese aquí su mensaje"></textarea>            
+            </textarea>
+                <p class="parrafo">&#128712 Sólo letras sin acentos ni carcteres especiales</p>
+                <!--Botones -->
+                <div class="botones">
+                    <button class="boton" type="button"  onclick="botonEncriptar()">Encriptar</button>
+                    <button class="boton" type="button" onclick="botonDesencriptar()">Desencriptar</button>
+                </div>
+            </div>            
+        
+            <!--Salida del texto -->
+            <div class="parte2">
+                <img class="buscando" src="imagenes/buscando3.png">           
+                <textarea type="text" cols="22" row="8"  class="input-text2" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <button class="boton2" type="button" onclick="copiarTxt()">Copiar</button>
+            </div>   
+        
+        </section>
+
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <a href="https://www.linkedin.com/in/jonathan-mora-araya-716890163/" target="_blank"><p>Creado por <span>Jonathan M. Dev.</span></p></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
